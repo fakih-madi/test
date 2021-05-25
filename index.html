@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Maillots Eros sport 13</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Eros Sport 13</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Maillots</a></li>
+                        <li class="nav__item"><a href="#Avantages" class="nav__link">Avantages</a></li>
+                        <li class="nav__item"><a href="#Devis" class="nav__link">Devis</a></li>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="img/Mockup maillot state.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Vos maillots personnalisés</h1>
+                        <p class="home__description">Un design unique et 100% personnalisable</p>
+                        <a href="#modal1" class="button js-modal">Contactez-nous</a>
+                    </div>   
+                </div>
+            </section>
+            
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Vos maillots</h2>
+                        <p class="share__description">Notre équipe est à votre écoute pour vous confectionner un maillot à votre image et avec un design unique qui va faire sensation auprès de vos joueurs et de vos fans.</p>
+                        <a href="#modal1" class="button js-modal">Contactez-nous</a>
+                    </div>
+
+                    <div class="share__img">
+                        <img src="img/Mockup maillot blue.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--========== Avantages ==========-->
+            <section class="decoration section bd-container" id="Avantages">
+                <h2 class="section-title">Les maillots Eros sport c'est :</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="img/Mockup maillot blue.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">La qualité pour vous</h3>
+                        <h4>Une large gamme de tissus sublimés durable dans le temps pour une personnalisation complète.</h4>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/Mockup maillot military.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Personnalisable</h3>
+                        <h4>Choix des couleurs, du design, des coupes nos maillots sont 100% personnalisables.</h4>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/Mockup maillot back.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Bonus</h3>
+                        <h4>Marquage joueurs et choix de la police d'écriture personnalisable inclus dans le prix </h4>
+                    </div>
+                </div>
+            </section>
+
+            <aside id="modal1" class="modal" style="display: none;" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="titlemodal">
+                <div class="modal-wrapper js-modal-stop" >
+                    <button class="js-modal-close">Fermer</button>
+                    <h1 id="titlemodal">Contactez-nous</h1>
+                    <a href="tel:+33768386219" id="nummodal">0768386219</a>
+                </div>
+                
+            </aside>
+
+            <!--========== Devis ==========-->
+            <section class="send section" id="Devis">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Email</h2>
+                        <p class="send__description">Demander une offre personnalisée</p>
+                        <form action="Php/form.php" method="POST">
+                            <div class="send__direction">
+                                <input type="text" placeholder="nom *" name="nom" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="prenom *" name="prenom" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="club *" name="club" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="Ville *" name="ville" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="Adresse *" name="adresse" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="Code postal *" name="codePostal" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="sport *" name="sport" class="send__input">
+                            </div>
+                            <div class="send__direction">
+                                <input type="text" placeholder="téléphone *" name="telephone" class="send__input">
+                            </div>
+                            <div id="send_email">
+                                <input type="email" placeholder="email *" name="email" class="send__input">
+                            </div>
+                                <!-- <a href="#" class="button">Envoyer</a> -->
+                                <button type="submit" class="button" name="send_form">Envoyer</button>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="img/Mockup maillot state.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <!--
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">CGV</a>
+                    </h3>
+                </div>
+            </div>
+            -->
+
+            <p class="footer__copy">&#169; 2021 Eros World Society. N°Siren : 899436190. All right reserved.</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
